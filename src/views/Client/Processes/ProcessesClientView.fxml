@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<StackPane fx:id="stackPane" prefHeight="853.0" prefWidth="1688.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Client.Processes.ProcessesClientViewController">
+     <children>
+      <VBox style="-fx-background-color: white;" stylesheets="@../../../resources/main.css">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1238.0" style="-fx-background-color: TRANSPARENT;">
+               <children>
+                  <FontAwesomeIcon glyphStyle="-fx-fill:black" iconName="WRENCH" size="3.5em" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MIS AUTOMÓVILES EN PROCESO">
+                     <font>
+                        <Font name="Segoe UI Light" size="50.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="700.0" prefWidth="1648.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+               <children>
+                  <TabPane id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Lista en Atención">
+                           <content>
+                              <StackPane prefHeight="641.0">
+                                 <children>
+                                    <HBox prefHeight="641.0" prefWidth="1645.0">
+                                       <children>
+                                          <VBox prefHeight="601.0" prefWidth="1658.0">
+                                             <children>
+                                                <TableView fx:id="tableView" prefHeight="601.0" prefWidth="1628.0">
+                                                  <columns>
+                                                      <TableColumn fx:id="car" prefWidth="341.0" text="AUTOMÓVIL" />
+                                                      <TableColumn fx:id="service" prefWidth="331.0" text="SERVICIO" />
+                                                      <TableColumn fx:id="mechanic" prefWidth="276.0" text="MECÁNICO" />
+                                                      <TableColumn maxWidth="381.0" minWidth="0.0" prefWidth="144.0" text="PRECIO">
+                                                         <columns>
+                                                            <TableColumn fx:id="workPrice" prefWidth="126.0" text="OP" />
+                                                            <TableColumn fx:id="spPrice" prefWidth="99.0" text="RP" />
+                                                         </columns>
+                                                      </TableColumn>
+                                                      <TableColumn fx:id="total" minWidth="0.0" prefWidth="141.0" text="TOTAL" />
+                                                  </columns>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </TableView>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                           </content>
+                      </Tab>
+                      <Tab text="Lista en Espera">
+                           <content>
+                              <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <VBox prefHeight="601.0" prefWidth="1623.0">
+                                             <children>
+                                                <TableView fx:id="tableViewW" prefHeight="601.0" prefWidth="1060.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="carW" prefWidth="336.0" text="AUTOMÓVIL" />
+                                                      <TableColumn fx:id="serviceW" prefWidth="292.0" text="SERVICIO" />
+                                                      <TableColumn fx:id="mechanicW" minWidth="0.0" prefWidth="302.0" text="MECÁNICO" />
+                                                      <TableColumn fx:id="dateW" prefWidth="225.0" text="FECHA" />
+                                                      <TableColumn maxWidth="301.0" minWidth="0.0" prefWidth="75.0" text="PRECIO">
+                                                         <columns>
+                                                            <TableColumn fx:id="workPriceW" prefWidth="126.0" text="OP" />
+                                                            <TableColumn fx:id="spPriceW" prefWidth="99.0" text="RP" />
+                                                         </columns>
+                                                      </TableColumn>
+                                                      <TableColumn fx:id="totalW" prefWidth="156.0" text="TOTAL" />
+                                                   </columns>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </TableView>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                           </content>
+                      </Tab>
+                        <Tab text="Lista de Finalizados">
+                           <content>
+                              <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <VBox prefHeight="601.0" prefWidth="1583.0">
+                                             <children>
+                                                <TableView fx:id="tableViewFinished" prefHeight="601.0" prefWidth="1060.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="carFinished" prefWidth="226.0" text="AUTOMÓVIL" />
+                                                      <TableColumn fx:id="serviceFinished" prefWidth="257.0" text="SERVICIO" />
+                                                      <TableColumn fx:id="mechanicFinished" prefWidth="226.0" text="MECÁNICO" />
+                                                      <TableColumn fx:id="dateFinished" prefWidth="294.0" text="FECHA" />
+                                                      <TableColumn maxWidth="301.0" minWidth="0.0" prefWidth="125.0" text="PRECIO">
+                                                         <columns>
+                                                            <TableColumn fx:id="workPriceFinished" prefWidth="126.0" text="OP" />
+                                                            <TableColumn fx:id="spPriceFinished" prefWidth="99.0" text="RP" />
+                                                         </columns>
+                                                      </TableColumn>
+                                                      <TableColumn fx:id="totalFinished" prefWidth="226.0" text="TOTAL" />
+                                                      <TableColumn fx:id="stateFinished" prefWidth="128.0" text="STATE" />
+                                                   </columns>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </TableView>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

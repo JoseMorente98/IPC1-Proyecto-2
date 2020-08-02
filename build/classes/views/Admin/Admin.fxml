@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="946.0" prefWidth="1697.0" stylesheets="@../../resources/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Admin.AdminController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="197.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/img/carro.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefWidth="197.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton onAction="#open_home" prefHeight="95.0" prefWidth="200.0" styleClass="hoover_border" text="INICIO">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="HOME" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#open_employee" prefHeight="95.0" prefWidth="200.0" styleClass="hoover_border" text="EMPLEADOS">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="USER" />
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#open_services" prefHeight="95.0" prefWidth="200.0" styleClass="hoover_border" text="SERVICIOS">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="WRENCH" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#open_parts" prefHeight="95.0" prefWidth="200.0" styleClass="hoover_border" text="REPUESTOS">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="WRENCH" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#open_clients" prefHeight="95.0" prefWidth="200.0" styleClass="hoover_border" text="CLIENTES">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="USERS" />
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#open_workOrder" prefHeight="95.0" prefWidth="200.0" styleClass="hoover_border" text="ORDENES">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="FILE" />
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#open_processesView" prefHeight="95.0" prefWidth="200.0" styleClass="hoover_border" text="PROCESOS">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="COG" />
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#open_reports" prefHeight="95.0" prefWidth="200.0" styleClass="hoover_border" text="REPORTES">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="FILE" />
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#logOut" prefHeight="95.0" prefWidth="200.0" styleClass="hoover_border" text="CERRAR SESIÓN">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon iconName="LINK" size="1.5em" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="vbox" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+           
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

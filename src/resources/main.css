@@ -1,0 +1,278 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2019, 12:15:02 PM
+    Author     : Juan José Ramos
+*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Medium.ttf');
+}
+
+.text {
+    -fx-font-family: "Roboto";
+}
+
+/*azulito cool #6200EE*/
+.pane{
+    -fx-background-color:black;
+}
+
+.fxml {
+    -fx-background-color:transparent;
+}
+
+
+
+.transparet-buttton{
+    -fx-background-color:transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: white;
+    -fx-border-width:1px;
+    -fx-text-fill:white;
+}
+
+.account-buttton{
+    -fx-background-color:transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: black;
+    -fx-border-width:1px;
+    -fx-text-fill:black;
+}
+
+.danget-buttton{
+    -fx-background-color:transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #B00020;
+    -fx-border-width:1px;
+    -fx-text-fill:#B00020;
+}
+.warning-buttton{
+    -fx-background-color:transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ffc107;
+    -fx-border-width:1px;
+    -fx-text-fill:#ffc107;
+}
+
+.success-buttton{
+    -fx-background-color:transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #28a745;
+    -fx-border-width:1px;
+    -fx-text-fill:#28a745;
+}
+
+.primary-buttton{
+    -fx-background-color:transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #007bff;
+    -fx-border-width:1px;
+    -fx-text-fill:#007bff;
+}
+
+
+.updateInfo-buttton{
+    -fx-background-color:#ff616f;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ff616f;
+    -fx-border-width:1px;
+    -fx-text-fill:white;
+}
+
+.log-pane{
+    -fx-background-color:white
+}
+
+.tf-box{
+    -fx-background-color:transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width:0px 0px 1px 0px;
+        
+}
+
+.tf{
+    -fx-background-color:transparent;
+    
+}
+
+.hoover_border{
+    -fx-background-color:transparent;
+    -fx-text-fill:black;
+     width: 212;
+     height:94;
+}
+
+
+.hoover_fade:hover{
+    -fx-background-color:#e2e2e2 !important;
+    -fx-cursor: hand;
+}
+
+.hoover_border:hover {
+    -fx-background-color:#6200EE;
+    -fx-background-radius: 5px;
+    -fx-border-color: #6200EE;
+    -fx-border-width:1px;
+    -fx-text-fill:white;
+    -fx-cursor: hand;
+    -fx-fill:white;
+}
+
+
+
+
+
+/*-------------------------------------*/
+/** TableView**/
+
+.table-view{
+    -fx-table-cell-border-color:  #fff;
+    -fx-effect: dropshadow( gaussian,rgba(0,0,0,0.16),5,0,0,2);
+    -fx-background-radius: 3px;
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: white;
+}
+.table-view .column-header:last-visible{
+    -fx-border-width: 0 0 1 0;
+}
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header{
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: rgba(1,1,1,0.15);
+}
+
+
+.table-view .column-header .label{
+    -fx-font-size:16px;
+    -fx-text-fill: #757575;
+    -fx-padding:16 0 16 0;
+    -fx-alignment:CENTER;
+    -fx-font-weight:400;
+    -fx-font-family: "Corbel";
+}
+
+.table-view .table-row-cell .table-cell{
+    -fx-border-width: 0 16 0 16;
+    
+}
+
+.table-view .table-row-cell:selected .table-cell{
+    -fx-text-fill: #3F51B5;
+    -fx-border-width: 0 0 0 0;
+}
+.table-view .table-row-cell:selected{
+    -fx-background-color: rgba(0,0,0,0.04);
+    -fx-background-insets:0;
+}
+
+
+.table-view .table-row-cell{
+    -fx-background-color:transparent;
+    -fx-background-insets:0;
+}
+
+.table-view .table-column{
+    -fx-padding:16 0 16 0;
+}
+
+.table-view .table-cell{
+    -fx-font-size: 16px;
+}
+.table-view .table-cell .ripple-circle{
+    -fx-fill:#2196F3;
+}
+.table-view .table-cell > .text-field{
+    -fx-background-color:transparent;
+    
+    -fx-padding:0 8 8 8;
+    -fx-background-insets: 0;
+    -fx-border-width:0 0 2 0;
+    -fx-border-color: #3F51B5;
+}
+
+.table-view .corner{
+    -fx-background-color:transparent;
+}
+
+
+
+/*ComboBox*/
+
+.combo-box > .list-cell {
+   
+    -fx-background-color: white;
+   -fx-padding: 8; /* 4 8 5 8 */
+}
+
+.combo-box-base{
+    -fx-background-color:white;
+    -fx-border-radius:0px;
+    -fx-background-insets:0;
+    -fx-font-size:16px;
+}
+
+.combo-box-base .list-view{
+    -fx-effect: dropshadow( gaussian,rgba(0,0,0,0.30),13,0,0,6);
+    -fx-background-radius: 3px;
+    -fx-background-color: white;
+}
+.combo-box-base .list-view .list-cell{
+    -fx-padding: 4px;
+}
+.combo-box-popup .list-view .list-cell:filled:selected
+{
+    -fx-background-color: white;
+    -fx-text-fill: #F44336;
+    -fx-background-color: rgba(0,0,0,0.06);
+
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected .label{
+    -fx-font-weigth: bold;
+}
+.combo-box-popup .list-view .list-cell:filled:selected:hover,
+.combo-box-popup .list-view .list-cell:hover 
+{
+    -fx-background-color: rgba(0,0,0,0.06);
+    -fx-text-fill: #3F51B5;
+}
+
+
+/*TABPANE*/
+
+#tabPane {
+    -fx-background-color: #FFFFFF;
+}
+
+#tabPane .tab-header-background {
+    -fx-background-color: #FFFFFF;
+}
+
+#tabPane .tab {
+    -fx-background-color: #d0d0d0;
+    -fx-background-radius: 0;
+    -fx-padding: 5 10 10 10;
+}
+
+#tabPane .tab:selected {
+    -fx-background-color: #007bff;
+    -fx-focus-color: transparent;
+}
+
+#tabPane .tab-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 18px;
+}

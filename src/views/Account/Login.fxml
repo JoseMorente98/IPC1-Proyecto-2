@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Account.AuthController">
+  <children>
+      <HBox layoutX="41.0" layoutY="234.0" prefHeight="50.0" prefWidth="384.0" styleClass="tf-box">
+         <children>
+            <TextField fx:id="user" prefHeight="49.0" prefWidth="383.0" promptText="Nick" styleClass="tf">
+               <font>
+                  <javafx.scene.text.Font size="19.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon glyphStyle="-fx-fill:DEDEE4" iconName="USER" size="1.5em" text="" textAlignment="JUSTIFY" wrappingWidth="31.678571701049805">
+               <HBox.margin>
+                 
+                      <!-- <Insets top="18.0" />-->
+        
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <HBox layoutX="47.0" layoutY="306.0" prefHeight="50.0" prefWidth="379.0" styleClass="tf-box">
+         <children>
+            <PasswordField fx:id="pass" prefHeight="49.0" prefWidth="395.0" promptText="Contraseña" styleClass="tf">
+               <font>
+            <!--<Font size="20.0" />-->
+               </font>
+            </PasswordField>
+            <FontAwesomeIcon glyphStyle="-fx-fill:DEDEE4" iconName="LOCK" size="1.5em" wrappingWidth="26.464285850524902">
+               <HBox.margin>
+                   <!-- <Insets top="18.0" />-->
+                 </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <JFXButton fx:id="buttonLogin" layoutX="180.0" layoutY="402.0" onAction="#authenticate" prefHeight="49.0" prefWidth="138.0" styleClass="account-buttton" text="Inicio de Sesión" />
+      <ImageView fitHeight="182.0" fitWidth="248.0" layoutX="160.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/img/Autodesk.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="186.0" layoutY="198.0" prefHeight="39.0" prefWidth="130.0">
+         <font>
+            <!--<Font size="20.0" />-->
+         </font>
+      </Label>
+      <Text fx:id="text1" layoutX="110.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="282.6708984375" />
+   </children>
+</AnchorPane>

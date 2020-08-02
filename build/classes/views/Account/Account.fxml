@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="774" prefWidth="946" style="-fx-background-image: url('file:///C:/Users/Jose%20Morente/Documents/Reportes%20HTML/Material.jpg');" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Account.AccountController">
+    <children>
+      <Pane layoutY="188.0" prefHeight="400.0" prefWidth="980.0" styleClass="pane" stylesheets="@../../resources/main.css">
+         <children>
+            <Label layoutX="150.0" layoutY="168.0" style="-fx-text-fill: white;" text="¿NO TIENES UNA CUENTA?" textAlignment="CENTER" textFill="#363333">
+               <font>
+                  <javafx.scene.text.Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="673.0" layoutY="261.0" onAction="#open_logIn" prefHeight="50.0" prefWidth="168.0" ripplerFill="BLACK" styleClass="transparet-buttton" text="Iniciar Sesión" />
+            <JFXButton layoutX="150.0" layoutY="261.0" onAction="#open_signIn" prefHeight="50.0" prefWidth="168.0" ripplerFill="BLACK" styleClass="transparet-buttton" text="Registrarse" />
+            <Label layoutX="686.0" layoutY="168.0" style="-fx-text-fill: white;" text="¿YA TIENES CUENTA?" textAlignment="CENTER" textFill="#363333">
+               <font>
+                  <javafx.scene.text.Font size="20.0" />
+               </font>
+            </Label>
+            <VBox fx:id="vbox" layoutX="14.0" layoutY="-77.0" prefHeight="550.0" prefWidth="487.0" styleClass="log-pane" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

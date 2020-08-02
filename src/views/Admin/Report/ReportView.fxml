@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<StackPane fx:id="stackPane" stylesheets="@../../../resources/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Admin.Report.ReportViewController">
+   <children>
+      <VBox prefHeight="853.0" prefWidth="1278.0" style="-fx-background-color: WHITE;" stylesheets="@../../../resources/main.css">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1238.0" style="-fx-background-color: TRANSPARENT;">
+               <children>
+                  <FontAwesomeIcon glyphStyle="-fx-fill:black" iconName="FILE" size="3.5em" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="REPORTES">
+                     <font>
+                        <Font name="Segoe UI Light" size="50.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: TRANSPARENT;">
+                     <children>
+                        <VBox fx:id="report_client" alignment="CENTER" onMouseClicked="#report_client" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgb(4,41,89);" styleClass="hoover_fade" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="dateNow" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" />
+                                    <FontAwesomeIcon iconName="ELLIPSIS_H" />
+                                 </children>
+                              </HBox>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/User%20Clients.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="25.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow color="#bbbbbb" height="10.0" radius="4.5" width="10.0" />
+                           </effect>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#report_spare" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgb(4,41,89);" styleClass="hoover_fade" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" />
+                                    <FontAwesomeIcon iconName="ELLIPSIS_H" />
+                                 </children>
+                              </HBox>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../../resources/img/SpareParts.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 5 Repuestos">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="25.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                           </children>
+                           <effect>
+                              <DropShadow color="#bbbbbb" height="10.0" radius="4.5" width="10.0" />
+                           </effect>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#report_spareParts" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgb(4,41,89);" styleClass="hoover_fade" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" />
+                                    <FontAwesomeIcon iconName="ELLIPSIS_H" />
+                                 </children>
+                              </HBox>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/SpareParts2.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 5 Repuestos">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="25.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                           </children>
+                           <effect>
+                              <DropShadow color="#bbbbbb" height="10.0" radius="4.5" width="10.0" />
+                           </effect>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" onMouseClicked="#report_service" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgb(4,41,89);" styleClass="hoover_fade" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" />
+                                    <FontAwesomeIcon iconName="ELLIPSIS_H" />
+                                 </children>
+                              </HBox>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../resources/img/Services.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 5 Servicios">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="25.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                           </children>
+                           <effect>
+                              <DropShadow color="#bbbbbb" height="10.0" radius="4.5" width="10.0" />
+                           </effect>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#report_cars" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgb(4,41,89);" styleClass="hoover_fade" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" />
+                                    <FontAwesomeIcon iconName="ELLIPSIS_H" />
+                                 </children>
+                              </HBox>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../../resources/img/Automobile.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 5 Automóviles">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="25.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                           </children>
+                           <effect>
+                              <DropShadow color="#bbbbbb" height="10.0" radius="4.5" width="10.0" />
+                           </effect>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

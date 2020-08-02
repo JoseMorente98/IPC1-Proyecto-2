@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="736.0" prefWidth="506.0" stylesheets="@../../resources/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Account.AuthController">
+       <children>
+      <VBox alignment="CENTER" prefHeight="201.0" prefWidth="506.0">
+         <children>
+            <ImageView fitHeight="182.0" fitWidth="248.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/img/Autodesk.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <HBox layoutX="41.0" layoutY="234.0" prefHeight="50.0" prefWidth="384.0" styleClass="tf-box">
+         <children>
+            <TextField fx:id="name" maxHeight="-Infinity" prefHeight="49.0" prefWidth="357.0" promptText="Nombre Completo" styleClass="tf">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon glyphStyle="-fx-fill:DEDEE4" iconName="USER" size="1.5em" text="" textAlignment="JUSTIFY" wrappingWidth="31.678571701049805">
+               <HBox.margin>
+                  <Insets top="18.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <HBox layoutX="47.0" layoutY="306.0" prefHeight="50.0" prefWidth="379.0" styleClass="tf-box">
+         <children>
+            <TextField fx:id="dpi" maxHeight="-Infinity" prefHeight="49.0" prefWidth="357.0" promptText="DPI" styleClass="tf">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon glyphStyle="-fx-fill:DEDEE4" iconName="PLUS" size="1.5em" wrappingWidth="30.678571701049805">
+               <HBox.margin>
+                  <Insets top="18.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <HBox layoutX="48.0" layoutY="376.0" prefHeight="50.0" prefWidth="384.0" styleClass="tf-box">
+         <children>
+            <TextField fx:id="user2" maxHeight="-Infinity" prefHeight="49.0" prefWidth="357.0" promptText="Nick" styleClass="tf">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon glyphStyle="-fx-fill:DEDEE4" iconName="USER" size="1.5em" text="" textAlignment="JUSTIFY" wrappingWidth="31.678571701049805">
+               <HBox.margin>
+                  <Insets top="18.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <HBox layoutX="51.0" layoutY="438.0" prefHeight="50.0" prefWidth="379.0" styleClass="tf-box">
+         <children>
+            <PasswordField fx:id="pass2" prefHeight="49.0" prefWidth="384.0" promptText="Contraseña" styleClass="tf">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIcon glyphStyle="-fx-fill:DEDEE4" iconName="LOCK" size="1.5em" wrappingWidth="26.464285850524902">
+               <HBox.margin>
+                  <Insets top="18.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <JFXButton layoutX="193.0" layoutY="505.0" onAction="#getAccess" prefHeight="49.0" prefWidth="121.0" styleClass="primary-buttton" text="Crear Cuenta" />
+      <Text fx:id="text" layoutX="138.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="205.0" />
+   </children>
+</AnchorPane>
